@@ -35,7 +35,7 @@ const SavedResults = props => {
                                             <div className="card-text">
                                                 <h6>{savedBook.author}</h6>
                                                 <p>{savedBook.description}</p>
-                                                <a href={savedBook.link} className="savedBook btn btn-primary">View</a>
+                                                <a href={savedBook.link} rel="noopener noreferrer" target="_blank" className="savedBook btn btn-primary">View</a>
                                                 <button className="deleteBook btn btn-success" id={savedBook._id} onClick={() => props.handleDeleteButton(savedBook._id)}>Delete</button>
                                             </div>
                     

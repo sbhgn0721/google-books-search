@@ -45,7 +45,7 @@ handleSavedButton = event => {
     let savedBooks =  this.state.books.filter(book => book.id === event.target.id)
     savedBooks = savedBooks[0];
     API.saveBook(savedBooks)
-    .then(this.setSate({message: alert("Your book is saved!")}))
+    .then(this.setState({message: alert("Your book is saved!")}))
     .catch(err => console.log(err))
 }
 

@@ -1,0 +1,13 @@
+.savedBook {
+    width: 10%;
+    height: 40px;
+    font-weight: bold;
+}
+
+.deleteBook {
+    margin-left: 2%;
+    margin-top: 0%;
+    width: 10%;
+    height: 40px;
+    font-weight: bold;
+}

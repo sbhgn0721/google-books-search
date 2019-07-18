@@ -35,7 +35,7 @@ const SearchResults = props => {
                                             <div className="card-text">
                                                 <h6>{book.author}</h6>
                                                 <p>{book.description}</p>
-                                                <a href={book.link} className="viewBook btn btn-primary">View</a>
+                                                <a href={book.link} rel="noopener noreferrer" target="_blank" className="viewBook btn btn-primary">View</a>
                                                 <button className="saveBook btn btn-success" id={book.id} onClick={(event) => props.handleSavedButton(event)}>Save</button>
                                             </div>
                     

@@ -10,7 +10,7 @@ class Saved extends Component {
 
 componentDidMount() {
     API.getBooks()
-    .then(res => this.ListeningStateChangedEvent({ savedBooks: res.data}))
+    .then(res => this.setState({ savedBooks: res.data}))
     .catch(err => console.log(err))
 }
 
